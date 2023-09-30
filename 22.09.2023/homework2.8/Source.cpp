@@ -26,6 +26,6 @@ int main() {
 	if (b >= a && b >= c) {
 		m = b;
 	}
-	std::cout << n << " " << s - (n + m) << " " << m;
+	std::cout << m << " " << s - (n + m) << " " << n;
 	return 0;
 }
