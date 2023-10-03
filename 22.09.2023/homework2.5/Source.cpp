@@ -6,38 +6,20 @@ int main(int argc, char* argv[]) {
 	a = n % 10;
 	int b = n % 100;
 	
-	if (b == 12) {
+	if (b >= 12 && b<=13) {
 		std::cout << n << " bochek";
 		return 0;
-	}
-	if (b == 14) {
-		std::cout << n << " bochek";
-		return 0;
-	}
-	if (b == 11) {
-		std::cout << n << " bochek";
-		return 0;
-	}
-	if (b == 13) {
-		std::cout << n << " bochek";
 	}
 	if (a == 1) {
 		std::cout << n << " bochka";
 		return 0;
 	}
-	if (a == 2) {
+	if (a >= 2 && a<=4) {
 		std::cout << n << " bochki";
 		return 0;
 	}
-	if (a == 3) {
-		std::cout << n << " bochki";
-		return 0;
-	}
-	if (a == 4) {
-		std::cout << n << " bochki";
-		return 0;
-	}
+
 	std::cout << n << " bochek";
 
-
+	return 0;
 }

@@ -1,16 +1,5 @@
 #include<iostream>
-void GreedyAlgorithm(int n, int a) {
-	int b = 0;
-	b = n / 20;
-	n = n - b * 20;
-	int c = 0;
-	c = n / 10;
-	n = n - c * 10;
-	int d = 0;
-	d = n / 5;
-	n = n - 5 * d;
-	std::cout << n << " " << d << " " << c << " " << b << " " << a;
-}
+
 int main(int argc, char* argv[]) {
 	int n = 0;
 	std::cin >> n;
@@ -33,17 +22,19 @@ int main(int argc, char* argv[]) {
 		std::cout << "0 0 1 0 " << a;
 		return 0;
 	}
-	if (n >= 20 && n <= 35 ) {
-		GreedyAlgorithm(n, a);
-		return 0;
-	}
-	if (n >= 10 && n <= 17) {
-		GreedyAlgorithm(n, a);
-		return 0;
-	}
-	if ( n >= 0 && n <= 8) {
-		GreedyAlgorithm(n, a);
+	if (n >= 20 && n <= 35 || n >= 10 && n <= 17 || n >= 0 && n <= 8) {
+		int b = 0;
+		b = n / 20;
+		n = n - b * 20;
+		int c = 0;
+		c = n / 10;
+		n = n - c * 10;
+		int d = 0;
+		d = n / 5;
+		n = n - 5 * d;
+		std::cout << n << " " << d << " " << c << " " << b << " " << a;
 		return 0;
 	}
 
+	return 0;
 }
