@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 	int n;
 	std::cin >> n;
 
-	long long s = 1;
+	int s = 1;
 
 	while (n > 0) 
 	{
