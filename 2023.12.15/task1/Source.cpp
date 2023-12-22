@@ -1,4 +1,3 @@
-
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
@@ -11,7 +10,7 @@ int main(int argc, char* argv[])
 
     while (!feof(f))
     {
-        char c = 0;
+        char c = ' ';
 
         fscanf(f, "%c", &c);
 
@@ -20,14 +19,15 @@ int main(int argc, char* argv[])
             count++;
         }
     }
-
     int sum = count + 1;
 
     fclose(f);
 
     f = fopen("out.txt", "w");
     fprintf(f, "%d", sum);
+
     fclose(f);
 
     return 0;
+
 }
