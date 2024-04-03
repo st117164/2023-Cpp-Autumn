@@ -63,4 +63,6 @@ int main(int argc, char* argv[])
 	fprintf(f, "%s", "eto palindrom");
 	fclose(f);
 
+	return 0;
+
 }

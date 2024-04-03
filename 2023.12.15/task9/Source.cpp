@@ -42,7 +42,6 @@ int main(int argc, char* argv[])
             n[k]++;
         }
 
-
         if (c == '.' || c == ';' || c == '!' || c == '?')
         {
             str[k] = s;
@@ -81,7 +80,7 @@ int main(int argc, char* argv[])
     {
         fprintf(f, "%c", s[i]);
     }
-    
+
     fclose(f);
 
     delete[] n;

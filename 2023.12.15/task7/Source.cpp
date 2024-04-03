@@ -44,12 +44,12 @@ int main(int argc, char* argv[])
 		{
 			fscanf(f, "%c", &c);
 			
-			if ((c != '.') && (c != ':') && (c != '!') && (c != '?') && (c != ' '))
+			if ((c != '.') && (c != ':') && (c != '!') && (c != '?') && (c != ' ') && (c!=','))
 			{
 				s1 = s1 + c;
 			}
 			
-			if (c == ' ' || c =='.')
+			if (c == ' ')
 			{
 				s[k] = s1;
 				s1 = "";
@@ -123,7 +123,7 @@ int main(int argc, char* argv[])
 	}
 
 	delete[] n;
-
+	delete[] s;
 	fclose(f);
 
 	return 0;
